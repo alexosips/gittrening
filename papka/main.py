@@ -1,23 +1,24 @@
-import random  # Підключаємо бібліотеку яка нам єбашить рандомні циферки
+import random
 
 
-class Start:  # Це ми відкрили класс
-    global list  # на це просто забей це костиль
+class Start:
+    global list
 
-    def __init__(self):  # Це тіп функція яка завжди виконується якщо виконується клас
-        self.list = []  # це в нас пустий списко. Для визову його будь де пишем self.list
+    def __init__(self):
+        self.list = []
         for i in range(0, 10):
-            self.list.append(random.randint(1, 40))  # Єбашим список на 10 елементів з рондомних цифер
-
+            self.list.append(random.randint(1, 40))
     def print(self):
-        print(self.list)# твоє завдання, окунь
-         # Вивести список (pass можна стерти то просто щоб функ. не була пустою)
-    def arrange(self): #впоряткуй список від найменшого до най більшого значення
-        pass
+        print(self.list)
 
-start = Start()  # Підключаємо клас
-start.print()  # приклад як викликати функцію з класу
+    def arrange(self):
+       self.list.sort()
+       print(self.list)
 
-# self у функціях pycharm дописує сам
-# Да блять, єбашим на основі ооп(самого базового) бо то є база, хулі ти хотів
-# Удачі,голубець
+    def revers(self):
+        pass #написати від більшого до меншого
+
+start = Start()
+start.print()
+start.arrange()
+#на забуть визвать функцію
