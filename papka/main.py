@@ -16,9 +16,12 @@ class Start:
        print(self.list)
 
     def revers(self):
-        pass #написати від більшого до меншого
+       self.list.reverse ()
+       print(self.list)
+        #написати від більшого до меншого
 
 start = Start()
 start.print()
 start.arrange()
+start.revers()
 #на забуть визвать функцію
