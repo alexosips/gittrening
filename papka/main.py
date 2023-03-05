@@ -19,12 +19,19 @@ class Start:
        self.list.reverse ()
        print(f"Від більшого до меншого: {self.list}")
 
-    def divssion(self): #поділити всі значення списку на два
-        pass
+    def divssion(self):
+        for i in range(len(self.list)):
+            f = self.list[i]
+            f = f / 2
+            self.list[i] = f
+        print(f"Числа поділені на 2: {self.list}") #Діляться з відсортованого списка
 
+    def number_in_list(self):
+        pass #Визначити кількість елемента списка і узнать чи є таке число в списку
 
 start = Start()
 start.print()
 start.arrange()
 start.revers()
+start.divssion()
 #на забуть визвать функцію
