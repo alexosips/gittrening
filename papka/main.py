@@ -19,6 +19,9 @@ class Start:
        self.list.reverse ()
        print(f"Від більшого до меншого: {self.list}")
 
+    def divssion(self): #поділити всі значення списку на два
+        pass
+
 
 start = Start()
 start.print()
