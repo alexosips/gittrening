@@ -39,9 +39,9 @@ class Start:
 
 
 start = Start()
-start.print()
-start.arrange()
-start.revers()
-start.divssion()
-start.number_in_list()
+#start.print()
+#start.arrange()
+#start.revers()
+#start.divssion()
+#start.number_in_list()
 #на забуть визвать функцію
