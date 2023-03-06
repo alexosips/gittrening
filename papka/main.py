@@ -27,11 +27,21 @@ class Start:
         print(f"Числа поділені на 2: {self.list}") #Діляться з відсортованого списка
 
     def number_in_list(self):
-        pass #Визначити кількість елемента списка і узнать чи є таке число в списку
+        for i in range(len(self.list)):
+            if self.list[i] == 10:
+
+                print('Належить списку')
+            else:
+
+                print("не належить списку")
+
+       
+
 
 start = Start()
 start.print()
 start.arrange()
 start.revers()
 start.divssion()
+start.number_in_list()
 #на забуть визвать функцію
