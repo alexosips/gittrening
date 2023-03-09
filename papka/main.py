@@ -55,7 +55,13 @@ class Start:
         print(f"Друга половина списка: {list2}")
 
     def strlist(self):
-        pass #Переведи кожен елемент списка в тип str
+        for i in range(len(self.list)):
+          self.list[i] = str(self.list[i])
+
+        print(self.list)
+
+    def name(self):
+        pass#підписати кожен елемент списка 
 
 start = Start()
 start.print()
@@ -65,4 +71,5 @@ start.print()
 #start.number_in_list()
 #start.kul_1_plus_9()
 start.half()
+start.strlist()
 #на забуть визвать функцію
