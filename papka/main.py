@@ -36,7 +36,12 @@ class Start:
                 print("не належить списку")
 
     def kul_1_plus_9(self):
-        pass #Виведи 1 елемент і 9 елмент списка та додай їх 
+        print(f"Перший елемент списка:{self.list[1]}")
+        print(f"Дев'ятий елемент списка:{self.list[9]}")
+        print(f"Сумма першого елемента та дев'ятого:{self.list[1] + self.list[9]}")
+
+    def half(self):
+        pass#Поділити список на дві половини та вивести
 
 
 start = Start()
@@ -44,5 +49,6 @@ start.print()
 start.arrange()
 start.revers()
 start.divssion()
-start.number_in_list()
+#start.number_in_list()
+start.kul_1_plus_9()
 #на забуть визвать функцію
