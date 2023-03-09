@@ -35,7 +35,8 @@ class Start:
 
                 print("не належить списку")
 
-       
+    def kul_1_plus_9(self):
+        pass #Виведи 1 елемент і 9 елмент списка та додай їх 
 
 
 start = Start()
