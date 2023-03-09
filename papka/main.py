@@ -1,6 +1,4 @@
 import random
-
-
 class Start:
     global list
 
@@ -73,7 +71,6 @@ class Start:
             s = self.list.index(f)
             x=f+s
             listnano.append(x)
-
         print(f"до\t{self.list}\tпісля\t{listnano}")
 
     def sumalist(self):
