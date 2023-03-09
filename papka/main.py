@@ -67,7 +67,16 @@ class Start:
             print(f"{strlist[i]} -> {self.list[i]}")
 
     def pluslen(self):
-        pass #До кожного елемнту списку додай його індекс і виведи в одному рядку версію до і після не використовуючи пробіли але щоб і воно не було слитно
+        listnano= []
+        for i in range(len(self.list)):
+            f = self.list[i]
+            s = self.list.index(f)
+            x=f+s
+            listnano.append(x)
+
+        print(f"до\t{self.list}\tпісля\t{listnano}")
+        
+
 start = Start()
 start.print()
 #start.name()
@@ -78,4 +87,5 @@ start.print()
 #start.kul_1_plus_9()
 #start.half()
 #start.strlist()
+start.pluslen()
 #на забуть визвать функцію
