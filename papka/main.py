@@ -41,14 +41,28 @@ class Start:
         print(f"Сумма першого елемента та дев'ятого:{self.list[1] + self.list[9]}")
 
     def half(self):
-        pass#Поділити список на дві половини та вивести
+        leni = len(self.list)
+        leni = leni / 2
+        leni = int(leni)
+        i2 = leni - 1
+        list1 = []
+        list2 = []
+        for i in range(0, leni):
+            i2 +=1
+            list1.append(self.list[i])
+            list2.append(self.list[i2])
+        print(f"Перша половина списка: {list1}")
+        print(f"Друга половина списка: {list2}")
 
+    def strlist(self):
+        pass #Переведи кожен елемент списка в тип str
 
 start = Start()
 start.print()
-start.arrange()
-start.revers()
-start.divssion()
+#start.arrange()
+#start.revers()
+#start.divssion()
 #start.number_in_list()
-start.kul_1_plus_9()
+#start.kul_1_plus_9()
+start.half()
 #на забуть визвать функцію
