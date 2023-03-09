@@ -45,6 +45,7 @@ class Start:
         leni = leni / 2
         leni = int(leni)
         i2 = leni - 1
+
         list1 = []
         list2 = []
         for i in range(0, leni):
@@ -61,15 +62,20 @@ class Start:
         print(self.list)
 
     def name(self):
-        pass#підписати кожен елемент списка 
+        strlist = ["Ярик","лох","Гніда","Мразь","Єбуча","Козлина","Підофіл","Єбись","Ти","Коньом"]
+        for i in range(len(self.list)):
+            print(f"{strlist[i]} -> {self.list[i]}")
 
+    def pluslen(self):
+        pass #До кожного елемнту списку додай його індекс і виведи в одному рядку версію до і після не використовуючи пробіли але щоб і воно не було слитно
 start = Start()
 start.print()
+#start.name()
 #start.arrange()
 #start.revers()
 #start.divssion()
 #start.number_in_list()
 #start.kul_1_plus_9()
-start.half()
-start.strlist()
+#start.half()
+#start.strlist()
 #на забуть визвать функцію
