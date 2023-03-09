@@ -75,10 +75,16 @@ class Start:
             listnano.append(x)
 
         print(f"до\t{self.list}\tпісля\t{listnano}")
-        
+
+    def sumalist(self):
+        suma = 0
+        for i in range(len(self.list)):
+            suma = suma + self.list[i]
+        print(f"Сума списка: {suma}")
 
 start = Start()
 start.print()
+start.sumalist()
 #start.name()
 #start.arrange()
 #start.revers()
@@ -87,5 +93,5 @@ start.print()
 #start.kul_1_plus_9()
 #start.half()
 #start.strlist()
-start.pluslen()
+#start.pluslen()
 #на забуть визвать функцію
