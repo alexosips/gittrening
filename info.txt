@@ -1,0 +1,16 @@
+git clone https://github.com/alexosips/gittrening.git #Створити папку з репозиторієм
+
+#В такомуж хронологічному порядку
+
+git status
+git add .
+git commit -m "Text"
+git push
+
+#Логін і пароль
+
+alexosips
+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
+
+#Щоб обновити
+git pull
