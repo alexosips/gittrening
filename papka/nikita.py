@@ -12,3 +12,4 @@ try:
     print(y)
 except ValueError:
     print("Логарифм від цього числа не можливий")
+    print("Нікито лох")
