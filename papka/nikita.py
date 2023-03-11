@@ -17,3 +17,8 @@ numstr1 = "2"
 numstr2 = "2"
 print(f"2+2={numstr1 + numstr2}") #Виводимо цю шнягу
 #Опа оказується 2+2=22
+
+a = 5
+b = 6
+c = a + b
+print(c)
