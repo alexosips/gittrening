@@ -78,7 +78,7 @@ class Start:
         for i in range(len(self.list)):
             suma = suma + self.list[i]
         print(f"Сума списка: {suma}")
-
+    def nikitatest
 start = Start()
 start.print()
 start.sumalist()
