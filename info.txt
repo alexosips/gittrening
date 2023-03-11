@@ -9,8 +9,5 @@ git push
 
 #Логін і пароль
 
-alexosips
-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
-
 #Щоб обновити
 git pull
