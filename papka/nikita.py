@@ -1,9 +1,14 @@
-import random
-#Виведи ліст і змінну
-#отсортируй лист
-#порівнй дві зміння і вивди яка з них більше і яка менше
-list = []
-number =  random.randint(1,100)
-number2 =  random.randint(1,100)
-for i in range(0, 10):
-    list.append(random.randint(1, 40))
+
+import math
+
+x = float(input("введіть Х="))
+
+try:
+    a = math.log10(0.083)
+    b = math.pow(math.e, a)
+    n = math.pow(math.e, a/b)
+    m = n - 1
+    y = math.pow(a+b, n) / (1 + (x / (math.pow(x, m) + math.pow(b, (m - n)))))
+    print(y)
+except ValueError:
+    print("Логарифм від цього числа не можливий")
