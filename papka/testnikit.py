@@ -12,7 +12,11 @@ d = 5**10
 for i in range(0,d):
     list.append(random.randint(1,100))
 print(f"Початковий список\n {list}")
-print(d)
+
+for i in range(len(list)):
+    i = 13
+print(i)
+
 
 # 1
 #for i in range(0,50):
