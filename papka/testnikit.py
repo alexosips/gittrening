@@ -8,14 +8,19 @@ import time
     5)Порахуй скільки елментів 13 в списку"""
 
 list = []
-d = 5**10
+d = 5**9
 for i in range(0,d):
     list.append(random.randint(1,100))
 print(f"Початковий список\n {list}")
 
+f = 0
 for i in range(len(list)):
-    i = 13
-print(i)
+    print(i)
+    if list[i] == 13:
+        f +=1
+    else:
+        pass
+print(f"Кількість: {f}")
 
 
 # 1
