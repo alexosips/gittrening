@@ -5,33 +5,32 @@
 класу повинен приймати розміри сторін А та В. Якщо сторони не задані при
 створенні класу, то повинен створюватись квадрат зі сторонами А = 1 и В = 1."""
 
-class Car:
+class Pramokutnik:
+    def __init__(self,stora=1,storb=1 ):
+        self.stora = stora
+        self.storb = storb
 
-    def __init__(self, name, volume, color):
-        self.name = name
-        self.volome = volume
-        self.color = color
+    def reversa(self):
+       print(self.stora)
 
-    def info(self):
-        print(f"Name: {self.name}\nVolome: {self.volome}\nColor: {self.color}")
+    def reversb(self):
+       print(self.storb)
 
-class Yourcar(Car):
-    def plus(self):
-        print(f"Suma: {self.volome + self.volome}")
+    def plosh(self):
+        print(f"площа: {self.stora} * {self.storb}={self.stora*self.storb}")
+
+    def perimeter(self):
+        print(f"периметр: {self.stora} + {self.storb} = {self.stora+self.storb}")
 
 
-
-class Error:
-    def error(self):
-        try:
-            print(self.name)
-        except AttributeError:
-            print("Окунь, це не можливо")
-
-car = Car("bmw", 2.5 , "red")
-car.info()
-ycar = Yourcar("bmw", 2.5 , "red")
-ycar.plus()
-
-er = Error()
-er.error()
+    def type(self):
+        if self.storb==self.stora:
+            print("квадрат")
+        else:
+            print("прямокутник")
+a = Pramokutnik(5,5)
+a.reversa()
+a.reversb()
+a.plosh()
+a.perimeter()
+a.type()
