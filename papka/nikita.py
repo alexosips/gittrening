@@ -39,6 +39,27 @@ for i in range(0, f):
         pass
 print(list)
 
+x = input("Введіть довжину списку: ")
+x = int(x)
+list = []
+
+for i in range(0, x):
+    element = input("Введіть елемент: ")
+    element = int(element)
+    list.append(element)
+    if i == x - 1:
+        print(f"Список просто з елементами {list}")
+        for g in range(len(list)):
+            list[g] = list[g] + random.randint(0, 20)
+            if g == x - 1:
+                print(f"Список з доданими рандомними значеннями: {list}")
+                for h in range(len(list)):
+                    list[h]= list[h] / 2
+                    if h == x-1:
+                        print(f"Список з діленням: {list}")
+
+    else:
+        print("Якась хуйня")
 
 
 
