@@ -1,5 +1,5 @@
-
-import math
+import random
+"""import math
 
 x = float(input("введіть Х="))
 
@@ -12,4 +12,9 @@ try:
     print(y)
 except ValueError:
     print("Логарифм від цього числа не можливий")
-    print("Нікито лох")
+    """
+list=[]
+#a = 5**8
+for i in range(0,10):
+    list.append(random.randint(0,30))
+print(list)
