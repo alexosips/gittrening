@@ -54,8 +54,8 @@ for i in range(0, x):
             if g == x - 1:
                 print(f"Список з доданими рандомними значеннями: {list}")
                 for h in range(len(list)):
-                    list[h]= list[h] / 2
-                    if h == x-1:
+                    list[h] = list[h] / 2
+                    if h == x - 1:
                         print(f"Список з діленням: {list}")
 
     else:
