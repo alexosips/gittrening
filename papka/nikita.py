@@ -13,8 +13,8 @@ try:
 except ValueError:
     print("Логарифм від цього числа не можливий")
     """
-list=[]
-#a = 5**8
-for i in range(0,10):
-    list.append(random.randint(0,30))
-print(list)
+a=[1, 2, 3 ,4 ,5 ,6 ,7]
+print(a)
+for b in range(len(a)):
+    a[b]=a[b]+5
+print(a)
