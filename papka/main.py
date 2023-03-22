@@ -1,4 +1,5 @@
 import random
+import nikita
 class Start:
     global list
 
@@ -8,6 +9,7 @@ class Start:
             self.list.append(random.randint(1, 40))
     def print(self):
         print(f"Вивод списка: {self.list}")
+        nikita.func()
 
     def arrange(self):
        self.list.sort()
@@ -78,10 +80,10 @@ class Start:
         for i in range(len(self.list)):
             suma = suma + self.list[i]
         print(f"Сума списка: {suma}")
-    def nikitatest
+
 start = Start()
 start.print()
-start.sumalist()
+#start.sumalist()
 #start.name()
 #start.arrange()
 #start.revers()
