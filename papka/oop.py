@@ -30,25 +30,32 @@ class Hello:
                 Hello()
 
     def add(self):
-        english = input("Введіть слово з англиської мови: ")  # Вводимо потрібні нам слова
-        ukr = input("Введіть його переклад: ")  # Та їх переклад
-        if english != ukr:
-            f = open('english.txt', 'a')  # Відкриваємо файл
-            f.write("\t")  # Робимо відступ
-            f.write(english)  # Вставляємо наше слово
-            f.close()  # Закриваємо файл
-            print("\nВиводим данні з файлу\n")
-            print(self.printenglish())
-            f2 = open('ukr.txt', 'a')  # Аналоігчні дії для перекладу
-            f2.write('\t')
-            f2.write(ukr)
-            f2.close()
-            print(self.printukr())
+        self.printenglish()
+        self.printukr()
+        if len(self.englishlist) == len(self.ukrlist):
 
+            english = input("Введіть слово з англиської мови: ")  # Вводимо потрібні нам слова
+            ukr = input("Введіть його переклад: ")  # Та їх переклад
+            if english != ukr:
+                f = open('english.txt', 'a')  # Відкриваємо файл
+                f.write("\t")  # Робимо відступ
+                f.write(english)  # Вставляємо наше слово
+                f.close()  # Закриваємо файл
+                print("\nВиводим данні з файлу\n")
+                print(self.printenglish())
+                f2 = open('ukr.txt', 'a')  # Аналоігчні дії для перекладу
+                f2.write('\t')
+                f2.write(ukr)
+                f2.close()
+                print(self.printukr())
+
+            else:
+                print("Спробуйте ще раз")
+                self.add()
         else:
-            print("Спробуйте ще раз")
-            self.add()
-
+            print("Очищення файлів")
+            self.delateall()
+            Hello()
     def printenglish(self): # Функція виводу інгліш слів
         file = open('english.txt', 'r') # Відкриваєм файл з аргументом 'a'
         for line in file:
