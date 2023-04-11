@@ -53,7 +53,9 @@ for i in range(len(result_wordses)):
 print(f"Слова з найбільшою кількістю голосних з \nпершого речення: {list}\n"
       f"Другого: {list2}\n"
       f"Третього: {list3}")
+
 def dellate(ls):
+    global texte, texte2,texte3
     for word in ls:
         if ls == list:
             texte = texte.replace(word, '')
@@ -65,4 +67,4 @@ def dellate(ls):
 
 for i in range(len(lse)):
     dellate(lse[i])
-    print(f"{texte}\n{texte2}\n{texte3}")
+print(f"{texte}\n{texte2}\n{texte3}")
